@@ -1,0 +1,40 @@
+#%RAML 1.0
+title: employee-sys-api
+baseUri: http://localhost:8081/api/employee
+version: 1.0
+protocols: [HTTP]
+
+/user:
+  post:
+    body:
+      application/json:
+        type: !include dataTypes/user-dataType.raml
+        example: !include examples/user-req.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/user-res.json
+      400:
+        body:
+          application/json:
+            example: !include examples/400.json              
+      500:
+        body:
+          application/json:
+            example: !include examples/500.json
+  /{number}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:           
+              example: !include examples/intList.json
+        400:
+          body:
+            application/json:
+              example: !include examples/400.json              
+        500:
+          body:
+            application/json:
+              example: !include examples/500.json    

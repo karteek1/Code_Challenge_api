@@ -1,0 +1,47 @@
+{
+  "configs": [
+    "global.xml",
+    "code-challenge-3.xml",
+    "code-challenge-5.xml",
+    "api.xml",
+    "code-challenge-4.1-and -2.xml",
+    "code-challenge-1-and-2.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:code-chalenge-api:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.2.2",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "log4j2.xml",
+        "global.xml",
+        "code-challenge-5.xml",
+        "application-types.xml",
+        "code-challenge-3.xml",
+        "code-challenge-4.1-and -2.xml",
+        "dwl/globalFunction.dwl",
+        "properties/code-challenge-QA.properties",
+        "properties/code-challenge-PROD.properties",
+        "properties/code-challenge-DEV.properties",
+        "examples/score.json",
+        "api/dataTypes/user-dataType.raml",
+        "api/api.raml",
+        "api/examples/400.json",
+        "api/examples/user-req.json",
+        "api/examples/intList.json",
+        "api/examples/500.json",
+        "api/examples/user-res.json",
+        "api.xml",
+        "code-challenge-1-and-2.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
